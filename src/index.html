@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- top header -->
-    <header class="w-11/12 md:w-10/12 mx-auto">
+    <header href="back.top" class="w-11/12 md:w-10/12 mx-auto">
         <div class="w-full bg-[#2A4A71E6] text-sm px-4 text-white flex flex-col md:flex-row items-center justify-between transition-all duration-200">
             <div class="self-start md:self-center flex items-center p-2 gap-2 text-sm">
                 <i class="fa-solid fa-envelope"></i> 
@@ -32,7 +32,11 @@
 
     <!-- navication bar -->
     <nav class="p-4 border-b-4 bg-[#2A4A71E6] text-white border-b-yellow-500">
-        <div class="max-w-11/12 md:max-w-10/12 mx-auto bg-yellow-500 flex gap-0.5">
+        <div class="flex items-center gap-1 max-w-11/12 md:max-w-10/12 mx-auto md:hidden">
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+            <h2>MENU</h2>
+        </div>
+        <div class="max-w-11/12 md:max-w-10/12 mx-auto bg-yellow-500 md:flex gap-0.5 hidden ">
            <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
             <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
         </div>
@@ -188,8 +192,8 @@
                 </div>
 
                 <!-- grid right -->
-                <div class=" w-11/12 md:h-10/12 mx-auto xl:col-span-1 lg:col-span-1 col-span-4">
-                    <div class="lg:pt-8 pl-4">
+                <div class="xl:col-span-1 lg:col-span-1 col-span-4">
+                    <div class="lg:pt-2 pl-4">
                         <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-1 text-white font-bold">Founder, Rafiuddin Memorial Academy</h2>
                         <img src="./asset/techer1.jpg" class="p-4">
                         <div class="text-center text-sm">
@@ -235,7 +239,9 @@
             </div>
             <div class="col-span-1">
                 <h1 class="text-xl py-4">School<a class="text-red-800 font-bold">location</a></h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.819446058398!2d90.37553178597636!3d23.737985243527092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8cabd87307d%3A0xe4235fa629993fc1!2sShimanto%20Bank%20ATM!5e0!3m2!1sen!2sbd!4v1748329999779!5m2!1sen!2sbd" width="350" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.819446058398!2d90.37553178597636!3d23.737985243527092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8cabd87307d%3A0xe4235fa629993fc1!2sShimanto%20Bank%20ATM!5e0!3m2!1sen!2sbd!4v1748329999779!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div> 
      </footer>
@@ -245,5 +251,10 @@
             <h1 class="text-white text-sm">Copyright © 2018 - 2025 Rafiuddin Memorial Academy, All Rights Reserved.</h1>
         </div>
       </div>
+    <div class="">
+        <button id="back.top"
+            class="fixed bottom-2 right-3 bg-[#365899] h-6 w-6 rounded-full  text-white"><i class="fa-solid fa-angle-up"></i>
+        </button>
+    </div>
 </body>
 </html>
