@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- top header -->
-    <header href="back.top" class="w-11/12 md:w-10/12 mx-auto">
+    <header href="backTop" class="w-11/12 md:w-10/12 mx-auto">
         <div class="w-full bg-[#2A4A71E6] text-sm px-4 text-white flex flex-col md:flex-row items-center justify-between transition-all duration-200">
             <div class="self-start flex items-center p-2 gap-2 text-sm">
                 <i class="fa-solid fa-envelope"></i> 
@@ -32,20 +32,23 @@
 
     <!-- navication bar -->
     <nav class="sticky top-0 z-10">
-        <div class="p-2 md:p-3 md:border-b-4 bg-[#2A4A71E6] border-b-yellow-500">
-
+        <div class="bg-[#2A4A71E6] border-b-4 border-b-yellow-500">
+        
             <!-- mobile navigation -->
-            <div class="flex items-start  max-w-11/12 md:max-w-10/12 mx-auto md:hidden">
-               <button id="menuToggle" class=" flex items-center gap-1 text-white"><i class="fa-solid fa-bars"></i><span>MENU</span> <button>
+            <div class="md:hidden w-11/12 mx-auto py-2 flex items-center">
+                <button id="menuToggle" class="flex items-center gap-1 text-white">
+                <i class="fa-solid fa-bars"></i>
+                <span>MENU</span>
+                </button>
             </div>
 
-            <!-- desktop navigation-->
-            <div class="max-w-11/12 md:max-w-10/12 mx-auto bg-yellow-500 md:flex gap-0.5 hidden ">
-                <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
-                <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
+            <!-- desktop navigation -->
+            <div class="hidden md:flex w-10/12 mx-auto h-12 bg-yellow-500">
+                <button class="bg-[#2A4A71E6] text-white px-6 w-auto flex items-center justify-center hover:bg-transparent transition-colors duration-300">Home</button>
+                <button class="bg-[#2A4A71E6] text-white px-6 w-auto flex gap-1 items-center justify-center hover:bg-transparent transition-colors duration-300">Institute <i class="fa-solid fa-angle-down"></i></button>
             </div>
         </div>
-        
+
         <!-- manu bar -->
          <div id="menu" class="hidden">
             <div class="flex flex-col bg-white shadow-lg border-b-4 border-yellow-500">
@@ -290,12 +293,17 @@
         </div>
       </div>
 
-      <!-- up to back -->
-    <div class="">
-        <button id="back.top"
-            class="fixed bottom-2 right-3 bg-[#365899] h-6 w-6 rounded-full  text-white"><i class="fa-solid fa-angle-up"></i>
-        </button>
-    </div>
+        <!-- Back to Top Button -->
+        <div>
+            <button id="backTop"
+                class="fixed bottom-2 right-3 bg-[#365899] h-10 w-10 rounded-full text-white flex items-center justify-center">
+                <i class="fa-solid fa-angle-up"></i>
+            </button>
+        </div>
+
+
+
+
 
     <!-- main js -->
      <script>
@@ -354,6 +362,10 @@
         // Start the auto slider initially
         startAutoSlide();
 
+          // Smooth scroll to top when the button is clicked
+       document.getElementById('backTop').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
    </script>
 
 </body>
