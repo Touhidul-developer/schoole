@@ -11,13 +11,13 @@
     <!-- top header -->
     <header href="back.top" class="w-11/12 md:w-10/12 mx-auto">
         <div class="w-full bg-[#2A4A71E6] text-sm px-4 text-white flex flex-col md:flex-row items-center justify-between transition-all duration-200">
-            <div class="self-start md:self-center flex items-center p-2 gap-2 text-sm">
+            <div class="self-start flex items-center p-2 gap-2 text-sm">
                 <i class="fa-solid fa-envelope"></i> 
                 <p class="hover:text-gray-400 hover:cursor-pointer">adoffice.rma@gmail.com</p>
                 <i class="fa-solid fa-phone"></i>
                 <p class="hover:text-gray-400 hover:cursor-pointer"> 01779058550</p>
             </div>
-            <div class="self-end md:self-center flex gap-2">
+            <div class="self-end md:items-center p-2 flex gap-2">
                 <a href=""> English</a>
                 <button class="font-bold hover:text-gray-400 cursor-">Login</button>
                 <h2 class="font-bold">: :</h2>
@@ -31,14 +31,31 @@
     </header>
 
     <!-- navication bar -->
-    <nav class="p-4 border-b-4 bg-[#2A4A71E6] text-white border-b-yellow-500">
-        <div class="flex items-center gap-1 max-w-11/12 md:max-w-10/12 mx-auto md:hidden">
-            <a href=""><i class="fa-solid fa-bars"></i></a>
-            <h2>MENU</h2>
+    <nav>
+        <div class="p-2 md:p-4 md:border-b-4 bg-[#2A4A71E6] border-b-yellow-500">
+
+            <!-- mobile navigation -->
+            <div class=" flex items-start  max-w-11/12 md:max-w-10/12 mx-auto md:hidden">
+               <button id="menuToggle" class=" flex items-center gap-1 text-white"><i class="fa-solid fa-bars"></i><span>MENU</span> <button>
+            </div>
+
+            <!-- desktop navigation-->
+            <div class="max-w-11/12 md:max-w-10/12 mx-auto bg-yellow-500 md:flex gap-0.5 hidden ">
+                <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
+                <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
+            </div>
         </div>
-        <div class="max-w-11/12 md:max-w-10/12 mx-auto bg-yellow-500 md:flex gap-0.5 hidden ">
-           <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
-            <button class="bg-[#2A4A71E6] px-4 hover:bg-transparent">Home</button>
+        
+        <!-- manu bar -->
+        <div id="menu" class="flex flex-col bg-white shadow-lg border-b-4 border-yellow-500 md:hidden">
+            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
+            <button class="flex justify-between items-center px-4 py-3 hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
         </div>
     </nav>
 
@@ -98,9 +115,11 @@
                         <div>
                             <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-2 text-white font-bold">Teachers</h2>
                         </div>
+
+                        <!-- sleider section-->
                         <div>
                             <div class="relative w-full max-w-4xl mx-auto overflow-hidden">
-                                <button id="prev"class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center z-10">&lt;
+                                <button id="prev"class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
                                 </button>
                                 <div
                                     id="slider"
@@ -116,7 +135,7 @@
                                     <img src="../src/asset/header3.jpg" alt="Slide 3" class="w-full"/>
                                     </div>
                                 </div>
-                                <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center z-10">&gt;
+                                <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center z-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
                                 </button>
                           </div>
                         </div> 
@@ -129,21 +148,26 @@
                                 <div>
                                     <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-2 text-white font-bold">Student Information</h2>
                                 </div>
-                                <div class=" lg:flex items-center justify-center gap-4 py-5 pl-4">
+                                <div class="flex flex-col items-center justify-center gap-4 py-5 pl-4 lg:flex-row lg:items-center lg:justify-center">
                                     <img src="/src/asset/3men.png" alt="">
-                                    <div class="text-[#2A4A71E6] text-sm font-semibold">
-                                        <p class="flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i> List of student attendance / absence</p>
-                                        <p class="flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i> Cultural Student Information</p>
+                                    <div class="text-[#2A4A71E6] text-sm font-semibold text-center lg:text-left">
+                                        <p class="flex gap-4 items-center justify-center lg:justify-start">
+                                            <i class="fa-solid fa-angle-right"></i> List of student attendance / absence
+                                        </p>
+                                        <p class="flex gap-4 items-center justify-center lg:justify-start">
+                                            <i class="fa-solid fa-angle-right"></i> Cultural Student Information
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+
 
                             <!-- Teacher's information -->
                             <div class="col-span-1">
                                 <div>
                                     <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-2 text-white font-bold">Teacher's information</h2>
                                 </div>
-                                <div class="lg:flex items-center gap-4 py-5 pl-4 ">
+                                <div class="flex flex-col items-center justify-center gap-4 py-5 pl-4 lg:flex-row lg:items-center lg:justify-center">
                                     <img src="/src/asset/2men.png" alt="">
                                     <div class="text-[#2A4A71E6] text-sm font-semibold">
                                         <p class="flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i> Publishing</p>
@@ -159,7 +183,7 @@
                                     <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-2 text-white font-bold">Download</h2>
                                 </div>
                                 <div class=" py-5">
-                                    <div class="lg:flex items-center gap-4 pl-4">
+                                    <div class="flex flex-col items-center justify-center gap-4 py-5 pl-4 lg:flex-row lg:items-center lg:justify-center">
                                         <img src="/src/asset/down.png" alt="">
                                        <div class="text-[#2A4A71E6] text-sm font-semibold">
                                         <p class="flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i> Copy of certificates</p>
@@ -177,7 +201,7 @@
                                 <div>
                                     <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-2 text-white font-bold">Academic Information</h2>
                                 </div>
-                                <div class="lg:flex items-center gap-4 py-5 pl-4">
+                                <div class="flex flex-col items-center justify-center gap-4 py-5 pl-4 lg:flex-row lg:items-center lg:justify-center">
                                     <img src="/src/asset/calender.png" alt="">
                                     <div class="text-[#2A4A71E6] text-sm font-semibold">
                                         <p class="flex gap-4 items-center"><i class="fa-solid fa-angle-right"></i> Academic calendar</p>
@@ -212,8 +236,9 @@
                             <button class="text-blue-700 hover:text-blue-900">Details</button>
                         </div>
                         <div class="grid gap-12 pt-20">
-                            <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-1 text-white font-bold">নোটিশ বোর্ড</h2>
-                            <h2 class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-1 text-white font-bold">গুরত্বপূর্ণ লিংক</h2>
+                            <a class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-1 text-white font-bold">নোটিশ বোর্ড</a>
+                            <a class="bg-[#2A4A71E6] border-l-8 border-yellow-500 p-1 text-white font-bold">গুরত্বপূর্ণ লিংক</a>
+                            <a class="flex items-center md:justify-start justify-center p-3 shadow text-[#2A4A71E6] text-sm">Academic Calender</a>
                         </div>
                     </div>
                 </div>
@@ -224,6 +249,8 @@
     <!-- footer setion-->
      <footer class="border-t-2 border-red-800 py-4">
         <div class="w-11/12 md:w-10/12 mx-auto grid xl:grid-cols-3 lg:grid-cols-2 ">
+
+            <!-- contact-section -->
             <div class="col-span-1">
                 <h1 class="text-xl py-4">Contact <a class="text-red-800 font-bold"> Us</a></h1>
                 <h3 class="text-lg font-bold py-2">Rafiuddin Memorial Academy</h3>
@@ -234,9 +261,16 @@
                     <li class="flex gap-2 items-center text-[#365899]"><i class="fa-solid fa-earth-asia text-lg"></i>rafiuddi.tahsingreenlife.xyz</li>
                 </ul>
             </div>
+
+            <!-- facebook ifreme -->
             <div class="col-span-1">
                 <h1 class="text-xl py-4">Our Facebook<a class="text-red-800 font-bold">Page</a></h1>
+                <div>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100076190171463&tabs=timeline&width=240&height=90&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
             </div>
+
+            <!-- map ifreme -->
             <div class="col-span-1">
                 <h1 class="text-xl py-4">School<a class="text-red-800 font-bold">location</a></h1>
                 <div class="overflow-hidden">
@@ -245,16 +279,19 @@
             </div>
         </div> 
      </footer>
+
      <!-- capy right -->
       <div class="bg-[#365899] py-2">
         <div class="w-11/12 md:w-10/12 mx-auto">
             <h1 class="text-white text-sm">Copyright © 2018 - 2025 Rafiuddin Memorial Academy, All Rights Reserved.</h1>
         </div>
       </div>
+
+      <!-- up to back -->
     <div class="">
         <button id="back.top"
             class="fixed bottom-2 right-3 bg-[#365899] h-6 w-6 rounded-full  text-white"><i class="fa-solid fa-angle-up"></i>
         </button>
     </div>
 </body>
-</html>
+</html> 
