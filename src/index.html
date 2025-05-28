@@ -31,11 +31,11 @@
     </header>
 
     <!-- navication bar -->
-    <nav>
-        <div class="p-2 md:p-4 md:border-b-4 bg-[#2A4A71E6] border-b-yellow-500">
+    <nav class="sticky top-0 z-10">
+        <div class="p-2 md:p-3 md:border-b-4 bg-[#2A4A71E6] border-b-yellow-500">
 
             <!-- mobile navigation -->
-            <div class=" flex items-start  max-w-11/12 md:max-w-10/12 mx-auto md:hidden">
+            <div class="flex items-start  max-w-11/12 md:max-w-10/12 mx-auto md:hidden">
                <button id="menuToggle" class=" flex items-center gap-1 text-white"><i class="fa-solid fa-bars"></i><span>MENU</span> <button>
             </div>
 
@@ -47,16 +47,19 @@
         </div>
         
         <!-- manu bar -->
-        <div id="menu" class="flex flex-col bg-white shadow-lg border-b-4 border-yellow-500 md:hidden">
-            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-            <button class="flex justify-between items-center px-4 py-3 shadow hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-            <button class="flex justify-between items-center px-4 py-3 hover:bg-yellow-500">Home <span><i class="fa-solid fa-plus"></i></span></button>
-        </div>
+         <div id="menu" class="hidden">
+            <div class="flex flex-col bg-white shadow-lg border-b-4 border-yellow-500">
+            <button class="flex justify-between items-center px-4 py-1 shadow hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+            <button class="flex justify-between items-center px-4 py-1 shadow hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+            <button class="flex justify-between items-center px-4 py-1 shadow hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+            <button class="flex justify-between items-center px-4 py-1 shadow hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+            <button class="flex justify-between items-center px-4 py-1 shadow hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+            <button class="flex justify-between items-center px-4 py-1 shadow hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+            <button class="flex justify-between items-center px-4 py-1 shadow hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+            <button class="flex justify-between items-center px-4 py-1 hover:bg-yellow-500"><span>Home</span><i class="fa-solid fa-plus"></i></button>
+         </div>
+         </div>
+
     </nav>
 
     <!-- main section -->
@@ -266,7 +269,7 @@
             <div class="col-span-1">
                 <h1 class="text-xl py-4">Our Facebook<a class="text-red-800 font-bold">Page</a></h1>
                 <div>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100076190171463&tabs=timeline&width=240&height=90&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <iframe class="w-80 " src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100076190171463&tabs=timeline&width=240&height=90&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="300" height="90" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>
 
@@ -274,7 +277,7 @@
             <div class="col-span-1">
                 <h1 class="text-xl py-4">School<a class="text-red-800 font-bold">location</a></h1>
                 <div class="overflow-hidden">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.819446058398!2d90.37553178597636!3d23.737985243527092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8cabd87307d%3A0xe4235fa629993fc1!2sShimanto%20Bank%20ATM!5e0!3m2!1sen!2sbd!4v1748329999779!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="pr-3 lg:w-[360px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d861.819446058398!2d90.37553178597636!3d23.737985243527092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8cabd87307d%3A0xe4235fa629993fc1!2sShimanto%20Bank%20ATM!5e0!3m2!1sen!2sbd!4v1748329999779!5m2!1sen!2sbd" width="340" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div> 
@@ -293,5 +296,65 @@
             class="fixed bottom-2 right-3 bg-[#365899] h-6 w-6 rounded-full  text-white"><i class="fa-solid fa-angle-up"></i>
         </button>
     </div>
+
+    <!-- main js -->
+     <script>
+
+        // drop down menu
+        document.getElementById("menuToggle").addEventListener("click", function () {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("hidden");
+        });
+
+        // slider
+        const slider = document.getElementById("slider");
+        const prevBtn = document.getElementById("prev");
+        const nextBtn = document.getElementById("next");
+
+        let currentIndex = 0;
+        const totalSlides = slider.children.length;
+        let autoSlideInterval;
+
+        // Update the position of the slider
+        function updateSliderPosition() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Move to next slide
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSliderPosition();
+        }
+
+        // Start auto sliding
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 3000); // every 3 seconds
+        }
+
+        // Stop auto sliding
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Event listeners for buttons
+        prevBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSliderPosition();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSliderPosition();
+        });
+
+        // Pause auto-slide on mouse enter, resume on mouse leave
+        slider.addEventListener("mouseenter", stopAutoSlide);
+        slider.addEventListener("mouseleave", startAutoSlide);
+
+        // Start the auto slider initially
+        startAutoSlide();
+
+   </script>
+
 </body>
 </html> 
